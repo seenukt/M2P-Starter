@@ -11,6 +11,7 @@ class StaterSdk : Application() {
         startKoin {
             applicationContext
             modules(listOf(viewModelModule))
+
         }
     }
 
