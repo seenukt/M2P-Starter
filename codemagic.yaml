@@ -7,6 +7,15 @@ simple-workflow:
       script: ./gradlew test
     - name: Build debug apk
       script: ./gradlew assembleDebug
+  triggering:
+    events:
+      - push
+      - tag
+      - pull_request
+    branch_patterns:
+      - pattern: release
+        include: true
+        source: true
   artifacts:
     - app/build/**/outputs/**/*.apk
   publishing:
