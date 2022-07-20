@@ -1,32 +1,3 @@
-#workflows:
-#  hello-world:
-#    name: Hello world workflow
-#    scripts:
-#      - echo "Hello World!"
-# simple-workflow:
-#  name: Native Android
-#  max_build_duration: 60
-#  scripts:
-#    - name: Run tests
-#      script: ./gradlew test
-#    - name: Build debug apk
-#      script: ./gradlew assembleDebug
-#  triggering:
-#    events:
-#      - push
-#      - tag
-#      - pull_request
-#    branch_patterns:
-#      - pattern: release
-#        include: true
-#        source: true
-#  artifacts:
-#    - app/build/**/outputs/**/*.apk
-#  publishing:
-#    email:
-#      recipients:
-#          - seenu@m2pfintech.com
-#          - ktseenu97@gmail.com
 
 workflows:
   native-android :
